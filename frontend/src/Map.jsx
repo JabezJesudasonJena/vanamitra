@@ -36,7 +36,7 @@ function Map() {
             </Marker>
           ))}
         </MakerClusterGroup>
-      </MapContainer>
+        </MapContainer>
     </div>
   )
 }
