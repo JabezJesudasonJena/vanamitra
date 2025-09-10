@@ -1,0 +1,67 @@
+/* Full screen background */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1543248939-4296e1ee6fcb") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+}
+
+/* Title */
+.home-title {
+  font-size: 2.5rem;
+  color: #f4e3c1;
+  margin-bottom: 15px;
+  font-family: "Georgia", serif;
+}
+
+/* Subtitle */
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #e2d3b0;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.home-btn {
+  padding: 14px 28px;
+  background-color: #a47551;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #6c4722;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+  }
+  .home-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}

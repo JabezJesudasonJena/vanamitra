@@ -1,15 +1,19 @@
-import React from "react"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
+import ComplaintForm from "./ComplaintForm.jsx";
+import Map from './Map'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <div class="flex flex-col">
-        <h1 className="text-bold">
-          Hello World 
-        </h1>
-      </div>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/map" element={<Map />} />
+        <Route path="/form" element={<ComplaintForm />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

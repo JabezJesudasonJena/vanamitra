@@ -1,0 +1,102 @@
+/* Full-page container */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f4efe6, #d8cbb3);
+  color: #2d2d2d;
+}
+
+/* Centered container */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fffaf0;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #a47551;
+}
+
+/* Heading */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b2e1a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #5c4b3d;
+}
+
+/* Form styling */
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #3b2a1a;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #bfa88e;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fdfcf7;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8a5c2d;
+  box-shadow: 0 0 5px rgba(138, 92, 45, 0.4);
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #8a5c2d;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #6c4722;
+  transform: scale(1.03);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
