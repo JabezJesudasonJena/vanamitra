@@ -1,9 +1,9 @@
 import './map-sty.css'
-import { MapContainer, Marker, TileLayer, Marker } from 'react-leaflet'
+import { MapContainer, Marker, TileLayer, Popup} from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
+import MakerClusterGroup from "react-leaflet-markercluster"
 
-
-
+// In the orginal code the API call will be done and the data will be extracted from the web
 const markers = [
   {
     geocode: [48.86, 2.3522],
@@ -27,10 +27,15 @@ function Map() {
             attribution= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contribxutors'
             url = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {markers.map(marker => (
-          <Marker position={marker.geocode}>
-          </Marker>
-        ))}
+
+        // This is so that the user can locate the area and add some evidences 
+        <MakerClusterGroup>
+          {markers.map(marker => (
+            <Marker position={marker.geocode}>
+              <Popup>{marker.popUp}</Popup>
+            </Marker>
+          ))}
+        </MakerClusterGroup>
       </MapContainer>
     </div>
   )
