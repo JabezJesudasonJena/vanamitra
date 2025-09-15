@@ -25,7 +25,7 @@ function Map() {
       <MapContainer center={[48.8566, 2.3522]} zoom={13}>
         <TileLayer
             attribution= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contribxutors'
-            url = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+            url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
         />
 
         // This is so that the user can locate the area and add some evidences 
