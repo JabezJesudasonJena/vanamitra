@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="home-container">
       <div className="overlay">
-        <h1 className="home-title">Welcome to FRA-Satyapan</h1>
+        <h1 className="home-title">Welcome to Vanamitra</h1>
         <p className="home-subtitle">
           Empowering Tribal Communities through Voice & Rights
         </p>
