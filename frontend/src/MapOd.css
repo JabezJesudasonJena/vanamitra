@@ -1,0 +1,9 @@
+.label-text {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black; /* Makes text readable on any background */
+  }
