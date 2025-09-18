@@ -13,7 +13,7 @@ function MapOd() {
       .then(response => response.json())
       .then(data => {   
         setGeoJsonData(data);
-        console.log(data)
+        //console.log(data)
       })
       // console.log(data)
 
