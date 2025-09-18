@@ -16,6 +16,9 @@ const HomePage = () => {
         <Link to="/map">
           <button className="home-btn">Map</button>
         </Link>
+        <Link to="/map-od">
+          <button className="home-btn">Map Od</button>
+        </Link>
       </div>
     </div>
   );
