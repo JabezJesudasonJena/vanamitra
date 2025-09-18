@@ -9,7 +9,7 @@ function MapOd() {
 
   useEffect(() => {
     //fetch('./or1.geojson')
-    fetch("./or1.geojson")
+    fetch("./concise_file.geojson")
       .then(response => response.json())
       .then(data => {   
         setGeoJsonData(data);
