@@ -1,0 +1,175 @@
+/* MapStyles.css */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .label-text {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black,
+                 -1px -1px 2px black,
+                 1px -1px 2px black,
+                 -1px 1px 2px black;
+  }
+  
+  /* Popup styles */
+  .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .leaflet-popup-content {
+    margin: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 300px !important;
+  }
+  
+  .leaflet-popup-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .leaflet-popup-content p {
+    margin: 8px 0;
+  }
+  
+  /* Status colors */
+  .status-claimed {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .status-in-process {
+    color: #b38f00;
+    font-weight: bold;
+  }
+  
+  .status-unclaimed {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  /* Insights panel */
+  .insights-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    max-width: 90%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333;
+  }
+  
+  .insights-panel h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .insights-panel p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .insights-panel h5 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    font-size: 13px;
+  }
+  
+  .stats-grid > div {
+    display: contents;
+  }
+  
+  .stats-grid strong {
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .stats-grid span {
+    text-align: right;
+  }
+  
+  /* Loading screen */
+  .loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+  }
+  
+  /* Analysis button and result */
+  .analysis-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .analysis-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .analysis-result {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .analysis-result h5 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .analysis-result p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  /* Timeline images */
+  .timeline-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  
+  .timeline-images img {
+    width: 32%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  

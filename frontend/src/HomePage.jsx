@@ -13,12 +13,10 @@ const HomePage = () => {
         <Link to="/form">
           <button className="home-btn">Submit a Complaint</button>
         </Link>
-        <Link to="/map">
+        <Link to="/mapdd">
           <button className="home-btn">Map</button>
         </Link>
-        <Link to="/map-od">
-          <button className="home-btn">Map Od</button>
-        </Link>
+        
       </div>
     </div>
   );
