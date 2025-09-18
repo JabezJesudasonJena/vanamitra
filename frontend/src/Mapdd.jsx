@@ -79,7 +79,8 @@ export default function Mapdd() {
   // Handle bounds change
   const handleBoundsChange = useCallback((bounds) => {
     setIsLoadingInsights(true);
-    fetch("http://127.0.0.1:8000/get-insights", {
+    //fetch("http://127.0.0.1:8000/get-insights", {
+        fetch("https://vanamitra-backend.onrender.com/get-insights", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bounds),
