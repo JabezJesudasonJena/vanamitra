@@ -7,6 +7,8 @@ import MapOd from "./MapOd.jsx";
 import AuthPage from "./AuthPage.jsx";
 import MapOdd from "./MapOdd.jsx";
 import Mapdd from "./Mapdd.jsx";
+import Home from "./Home.jsx";
+//import LoginPage from "./LoginPage.jsx";
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/mapod" element={<MapOdd />} />
         <Route path="/mapdd" element={<Mapdd />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   );
