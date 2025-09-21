@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'; // Import the CSS file
+import { Link } from 'react-router-dom'; // ✅ Import Link
 
 // Reusable SVG Icon Component
 const LogoIcon = ({ className }) => (
@@ -20,7 +21,7 @@ const FraSatyapanPage = () => {
                         </div>
                         <nav className="main-nav">
                             <a className="nav-link" href="#">Home</a>
-                            <a className="nav-link" href="#">FRA Atlas</a>
+                            <Link to="/mapdd" className='nav-link'>FRA ATLAS</Link>
                             <a className="nav-link" href="#">Claims</a>
                             <a className="nav-link" href="#">DSS</a>
                             <a className="nav-link" href="#">Resources</a>
@@ -45,7 +46,7 @@ const FraSatyapanPage = () => {
                             <h1 className="hero-title">Empowering Forest Communities with AI, GIS, and Transparency</h1>
                             <p className="hero-subtitle">Leveraging cutting-edge technology to support and empower forest communities in managing their rights and resources effectively.</p>
                             <div className="hero-cta-container">
-                                <a className="cta-button" href="#">Explore FRA Atlas</a>
+                                <Link to="/mapdd" className='cta-button'>FRA ATLAS</Link>
                             </div>
                         </div>
                     </div>
