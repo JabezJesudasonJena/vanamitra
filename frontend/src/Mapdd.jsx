@@ -64,6 +64,7 @@ function MapEvents({ onBoundsChange }) {
 
 // Main Map Component
 export default function Mapdd() {
+
   const [geoJsonData, setGeoJsonData] = useState(null);
   const [insights, setInsights] = useState(null);
   const [isLoadingInsights, setIsLoadingInsights] = useState(false);

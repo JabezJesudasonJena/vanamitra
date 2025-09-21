@@ -22,11 +22,10 @@ const FraSatyapanPage = () => {
                         <nav className="main-nav">
                             <a className="nav-link" href="#">Home</a>
                             <Link to="/mapdd" className='nav-link'>FRA ATLAS</Link>
-                            <a className="nav-link" href="#">Claims</a>
-                            <a className="nav-link" href="#">DSS</a>
-                            <a className="nav-link" href="#">Resources</a>
-                            <a className="nav-link" href="#">About Us</a>
-                            <a className="nav-link" href="#">Contact</a>
+                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Claims</a>
+                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">DSS</a>
+                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Resources</a>
+                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Contact</a>
                         </nav>
                         <div className="header-actions">
                             <button className="user-button">
@@ -46,7 +45,7 @@ const FraSatyapanPage = () => {
                             <h1 className="hero-title">Empowering Forest Communities with AI, GIS, and Transparency</h1>
                             <p className="hero-subtitle">Leveraging cutting-edge technology to support and empower forest communities in managing their rights and resources effectively.</p>
                             <div className="hero-cta-container">
-                                <Link to="/mapdd" className='cta-button'>FRA ATLAS</Link>
+                                <Link to="/dash" className='cta-button'>FRA ATLAS</Link>
                             </div>
                         </div>
                     </div>

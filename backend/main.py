@@ -140,3 +140,72 @@ def analyze_potential_area(feature: GeoJSONFeature):
         ]
     }
 
+# The Code below is for the decison support system 
+"""
+@app.post("/dss-prioritize-claims", summary="AI-powered DSS to prioritize in-process claims", response_model=List[PriorityResult])
+def dss_prioritize_claims(bounds: MapBounds):
+    
+    
+    # This DSS endpoint analyzes all 'in-process' claims within the current map view,
+    # simulates running a real Hugging Face model to analyze land cover, calculates
+    #a 'Livelihood Potential Score' based on the AI output, and returns a
+    #prioritized list of claims.
+    if gdf.empty:
+        raise HTTPException(status_code=500, detail="Geospatial data not loaded.")
+    if not model or not processor:
+        raise HTTPException(status_code=503, detail="AI Model is not available.")
+
+    view_bounds = box(bounds.west, bounds.south, bounds.east, bounds.north)
+    in_process_gdf = gdf[(gdf['status'] == 'in-process') & (gdf.intersects(view_bounds))]
+
+    if in_process_gdf.empty:
+        return []
+
+    priority_list = []
+    
+    # Analyze each 'in-process' claim with the AI
+    for index, row in in_process_gdf.iterrows():
+        try:
+            # Step 1: Simulate fetching a satellite image for the claim area
+            image_url = f"https://placehold.co/400x400/556B2F/FFFFFF?text=Satellite+View+{row['NAME']}"
+            response = requests.get(image_url)
+            image = Image.open(BytesIO(response.content)).convert("RGB")
+            
+            # Step 2: Run the image through the actual Hugging Face model
+            inputs = processor(images=image, return_tensors="pt")
+            outputs = model(**inputs)
+            logits = outputs.logits.cpu()
+            
+            # Step 3: Simulate analyzing the model's output to get asset percentages
+            forest_percent = random.randint(40, 80)
+            water_percent = random.randint(5, 20)
+            farmland_percent = 100 - forest_percent - water_percent
+            
+            # Step 4: Calculate a Livelihood Potential Score based on AI analysis
+            # This is a simple rule-based model. A higher score is given for a good balance of resources.
+            score = int((forest_percent * 0.6) + (water_percent * 0.25) + (farmland_percent * 0.15))
+
+            # Step 5: Generate a dynamic reason based on the analysis
+            reason = f"High potential due to {forest_percent}% forest cover and {water_percent}% water resources."
+            if score < 75:
+                reason = f"Moderate potential with {farmland_percent}% arable land. Further assessment recommended."
+            
+            priority_list.append(
+                PriorityResult(
+                    claim_name=row['NAME'],
+                    district=row['DISTRICT'],
+                    potential_score=score,
+                    reason=reason
+                )
+            )
+        except Exception as e:
+            # If a single analysis fails, skip it and continue
+            print(f"Could not analyze claim {row['NAME']}: {e}")
+            continue
+
+    # Sort the list to return the highest-scoring claims first
+    priority_list.sort(key=lambda x: x.potential_score, reverse=True)
+
+    return priority_list[:5]
+
+"""
