@@ -126,6 +126,7 @@ const FraSatyapanPage = () => {
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms</a>
                             <a href="#">Help Center</a>
+                            <a href="https://github.com/JabezJesudasonJena/vanamitra">GitHub Repo</a>
                         </div>
                     </div>
                 </div>
