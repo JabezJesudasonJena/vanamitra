@@ -419,37 +419,11 @@ const Dash = () => {
           </div>
 
           {/* Claim Card */}
-          <div className="claim-card">
-            <div
-              className="claim-img"
-              style={{
-                backgroundImage:
-                  'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQYaWBT6ePCiZE_iDANFOXqOHlnr4qhQ51MXiI55ewzP5N3bgX2ehO5fUpvVtELBGfcz269-7k8kTFDe3L6bDljn0rPVqMoUm4P5_3pA0yQNtAWBgVSA_cMOOdxTR2PJ6H70HI-HyrnhSG7WYR-3tZmS06UhpLgCsMGVTNJtIwIKN--c0lzyBElSWXyokd3bI9z7DYpaBduBhPyFExlUEQJOF5NEwirrD6U0ptnDFafSOJKbUIRgqMZc3f9eUZ2nbBd4bxODsA4OZi")',
-              }}
-            ></div>
-            <div className="claim-info">
-              <h3>Claiman </h3>
-              <p>Authenticity Score: <span className="highlight">85%</span></p>
-              <p>Livelihood Impact: <span className="highlight">High</span></p>
-            </div>
-            <button className="view-btn">View Details</button>
-          </div>
+          
 
           {/* Stats */}
-          <div className="stats">
-            <div className="stat-box">
-              <p>Total Claims Digitized</p>
-              <h3>100</h3>
-            </div>
-            <div className="stat-box">
-              <p>Villages Covered</p>
-              <h3>100</h3>
-            </div>
-            <div className="stat-box">
-              <p>Tribal Households Benefited</p>
-              <h3>300+</h3>
-            </div>
-          </div>
+          
+          
         </section>
       </main>
     </div>
