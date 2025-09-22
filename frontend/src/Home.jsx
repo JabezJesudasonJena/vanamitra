@@ -22,14 +22,14 @@ const FraSatyapanPage = () => {
                         <nav className="main-nav">
                             <a className="nav-link" href="#">Home</a>
                             <Link to="/mapdd" className='nav-link'>FRA ATLAS</Link>
-                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Claims</a>
-                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">DSS</a>
-                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Resources</a>
-                            <a className="nav-link" href="/https://github.com/JabezJesudasonJena/vanamitra">Contact</a>
+                            <a className="nav-link" href="https://github.com/JabezJesudasonJena/vanamitra">Claims</a>
+                            <a className="nav-link" href="https://github.com/JabezJesudasonJena/vanamitra">DSS</a>
+                            <a className="nav-link" href="https://github.com/JabezJesudasonJena/vanamitra">Resources</a>
+                            <a className="nav-link" href="https://github.com/JabezJesudasonJena/vanamitra">Contact</a>
                         </nav>
                         <div className="header-actions">
                             <button className="user-button">
-                                <span className="material-symbols-outlined">person</span>
+                                <Link className="material-symbols-outlined" to="/auth">USER </Link>
                             </button>
                         </div>
                     </div>
@@ -45,7 +45,8 @@ const FraSatyapanPage = () => {
                             <h1 className="hero-title">Empowering Forest Communities with AI, GIS, and Transparency</h1>
                             <p className="hero-subtitle">Leveraging cutting-edge technology to support and empower forest communities in managing their rights and resources effectively.</p>
                             <div className="hero-cta-container">
-                                <Link to="/dash" className='cta-button'>FRA ATLAS</Link>
+                                <Link to="/dash" className='cta-button'>FRA ATLAS</Link> <br /><br />
+                                <Link to="/form" className='cta-button'>Complaint form </Link>
                             </div>
                         </div>
                     </div>
@@ -117,7 +118,7 @@ const FraSatyapanPage = () => {
                         <div className="footer-brand">
                             <div className="logo-container">
                                 <LogoIcon className="logo-icon-small" />
-                                <p className="footer-logo-text">FRA-SATYAPAN</p>
+                                <p className="footer-logo-text">VANAMITRA</p>
                             </div>
                             <p className="footer-tagline">Built with AI & GIS for Social Justice and Empowerment.</p>
                         </div>
