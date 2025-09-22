@@ -16,7 +16,7 @@ import time
 # --- Data Loading and Preparation ---
 
 try:
-    GEOJSON_FILE = 'concise_file_with_status_500.geojson'
+    GEOJSON_FILE = 'concise_file_with_status.geojson'
     gdf = gpd.read_file(GEOJSON_FILE)
     gdf = gdf.to_crs(epsg=4326)
     print("GeoJSON data loaded successfully.")
