@@ -9,6 +9,7 @@ import MapOdd from "./MapOdd.jsx";
 import Mapdd from "./Mapdd.jsx";
 import Home from "./Home.jsx";
 import Dash from "./Dash.jsx";
+import Chatbot from "./Chatbot.jsx";
 //import LoginPage from "./LoginPage.jsx";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/mapdd" element={<Mapdd />} />
         <Route path="/" element={<Home />} />
         <Route path="/dash" element={<Dash />} />
+        <Route path="/bot" element={<Chatbot />} />
       </Routes>
     </Router>
   );

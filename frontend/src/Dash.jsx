@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, GeoJSON, useMapEvents, useMap } from "react-le
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import "./MapStyles.css"; // Move your custom CSS there
+import Chatbot from "./Chatbot.jsx";
 
 const runAnalysis = () => {
   if (!selectedFeature) return;
@@ -318,10 +319,6 @@ const Dash = () => {
           <a href="#" className="active">
             Claims
           </a>
-          <a href="#">DSS</a>
-          <a href="#">Resources</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
         </nav>
         <div className="header-right">
           <button className="icon-btn">🔔</button>
@@ -372,6 +369,7 @@ const Dash = () => {
       <p style={{ color: "red" }}>{analysisResult.error}</p>
     )}
   </div>
+  <Chatbot/>
   </div>
 </aside>
 
