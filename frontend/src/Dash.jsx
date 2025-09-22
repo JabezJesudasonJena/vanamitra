@@ -145,7 +145,7 @@ const Dash = () => {
 };
   // Load GeoJSON once
   useEffect(() => {
-    fetch("./concise_file_with_status.geojson")
+    fetch("./concise_file_with_status_2000.geojson")
       .then((res) => res.json())
       .then(setGeoJsonData)
       .catch((err) => console.error("Error fetching GeoJSON data:", err));
