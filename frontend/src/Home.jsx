@@ -117,7 +117,7 @@ const FraSatyapanPage = () => {
                         <div className="footer-brand">
                             <div className="logo-container">
                                 <LogoIcon className="logo-icon-small" />
-                                <p className="footer-logo-text">FRA-SATYAPAN</p>
+                                <p className="footer-logo-text">VANAMITRA</p>
                             </div>
                             <p className="footer-tagline">Built with AI & GIS for Social Justice and Empowerment.</p>
                         </div>
