@@ -1,0 +1,91 @@
+/* Main container for the 3-column grid */
+.claim-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 24px; /* Space between cards */
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card styling */
+.claim-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.claim-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Map display area for the image */
+.map-display img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content area within the card */
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card-content .coordinates {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Base style for the status badge */
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Dynamic color styles for the status */
+.status-approved {
+  background-color: #28a745; /* Green */
+}
+
+.status-pending {
+  background-color: #ffc107; /* Yellow */
+  color: #333; /* Darker text for yellow background */
+}
+
+.status-rejected {
+  background-color: #dc3545; /* Red */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 992px) {
+  .claim-grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .claim-grid-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}

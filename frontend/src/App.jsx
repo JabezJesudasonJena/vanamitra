@@ -10,6 +10,8 @@ import Mapdd from "./Mapdd.jsx";
 import Home from "./Home.jsx";
 import Dash from "./Dash.jsx";
 import Chatbot from "./Chatbot.jsx";
+import ClaimStatusGrid from "./ClaimStatusGrid.jsx";
+import VanamitraDashboard from "./VanamitraDashboard.jsx";
 //import LoginPage from "./LoginPage.jsx";
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/dash" element={<Dash />} />
         <Route path="/bot" element={<Chatbot />} />
+        <Route path="/claims" element={<ClaimStatusGrid />} />
+        <Route path="/new" element={<VanamitraDashboard />} />
       </Routes>
     </Router>
   );
