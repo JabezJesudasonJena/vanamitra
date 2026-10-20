@@ -57,30 +57,6 @@ FRA-SATYAPAN is a multi-layered platform that combines a WebGIS Atlas for offici
 - **Mobile App:**  
   - Framework: Flutter or React Native  
 
-### 7. Hackathon Development Roadmap (36 Hours)  
-
-- **Phase 1: Setup & Scaffolding (Hours 1-6)**  
-  - Initialize Git repository and set up cloud accounts (Vercel, Render).  
-  - Create basic project structures for the React frontend and FastAPI backend.  
-  - Define database schema and API endpoints.  
-  - Set up the basic Leaflet map on the frontend.  
-
-- **Phase 2: Core Feature Development - The AI "Time Machine" (Hours 7-18)**  
-  - Download sample satellite data for a specific test location.  
-  - Build and train a preliminary change-detection model in a Google Colab notebook.  
-  - Develop the core backend logic to accept geographic coordinates, process the imagery with the AI model, and return an authenticity score.  
-  - Connect the frontend so a user can draw a polygon on the map and get a result from the AI. This is your highest priority.  
-
-- **Phase 3: Secondary Features & Integration (Hours 19-28)**  
-  - Build the claims management dashboard UI.  
-  - Develop the basic mobile app for image upload.  
-  - Write and deploy the simple smart contract on the Sepolia testnet for securing evidence hashes.  
-
-- **Phase 4: Polish, Testing & Presentation Prep (Hours 29-36)**  
-  - Finalize the user interface and user experience.  
-  - Pre-load compelling data for your final demonstration.  
-  - Test the end-to-end workflow from claim submission to AI verification.  
-  - Prepare and relentlessly practice your final presentation.  
 
 ### 8. Impact & Scalability  
 This project directly empowers government officials with transparent, data-driven tools to implement the Forest Rights Act more effectively, ensuring social justice for tribal communities. Post-hackathon, the platform can be scaled to cover all states, integrate more complex datasets, and serve as a foundational tool for sustainable forest management and tribal welfare policies across India.  
